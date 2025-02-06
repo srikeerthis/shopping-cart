@@ -9,6 +9,10 @@
 !.yarn/plugins
 !.yarn/releases
 !.yarn/versions
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
 
 # testing
 /coverage
@@ -16,6 +20,12 @@
 # next.js
 /.next/
 /out/
+dist/
+
+# Logs
+*.log
+logs/
+*.gz
 
 # production
 /build
@@ -33,9 +43,23 @@ yarn-error.log*
 # env files (can opt-in for committing if needed)
 .env*
 
+# Tailwind and PostCSS cache
+postcss.config.js
+tailwind.config.js
+
 # vercel
 .vercel
 
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# IDE / Editor specific files
+.vscode/
+.idea/
+.DS_Store
+*.swp
+*.swo
+
+# Miscellaneous
+public/static/*.cache
