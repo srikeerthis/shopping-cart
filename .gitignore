@@ -45,7 +45,6 @@ yarn-error.log*
 
 # Tailwind and PostCSS cache
 postcss.config.js
-tailwind.config.js
 
 # vercel
 .vercel
